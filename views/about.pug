@@ -1,0 +1,33 @@
+extends layout
+
+block content
+    title='Projects'
+
+    div(class='container')
+        h1 My Projects
+        container
+            form
+                label
+                    input(type='radio', name='radio', checked)
+                    span HTML
+                label
+                    input(type='radio', name='radio')
+                    span CSS
+                label
+                    input(type='radio', name='radio')
+                    span Javascript
+        ul
+            li
+                h2 Project 1
+                p Project description goes here.
+                a(href='#') Learn More
+
+            li
+                h2 Project 2
+                p Project description goes here.
+                a(href='#') Learn More
+
+            li
+                h2 Project 3
+                p Project description goes here.
+                a(href='#') Learn More
