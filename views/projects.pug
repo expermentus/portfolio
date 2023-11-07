@@ -3,164 +3,247 @@ head
     link(rel='stylesheet', href='/stylesheets/style.css')
 
 body
-    div(id="image-track" data-mouse-down-at="0" data-prev-percentage="0")
-        img(src="https://cdn.discordapp.com/attachments/1021749336410959922/1158843021484376114/expermentus_cosy_large_room_with_blond_guy_coding_on_a_computer_b3cf0a8d-6e45-44df-a6db-90c759ae8ffd.png?ex=651db82a&is=651c66aa&hm=8c7385a95b421d1a431f816cdc3d8d27856780e247957d8e2869a78ce7222504&" class='image' id="image1" draggable="false" onclick='maximize(1, id)')
-        img(src="https://cdn.discordapp.com/attachments/1021749336410959922/1158843021484376114/expermentus_cosy_large_room_with_blond_guy_coding_on_a_computer_b3cf0a8d-6e45-44df-a6db-90c759ae8ffd.png?ex=651db82a&is=651c66aa&hm=8c7385a95b421d1a431f816cdc3d8d27856780e247957d8e2869a78ce7222504&" class='image' id="image2" draggable="false" onclick='maximize(2, id)')
-        img(src="https://cdn.discordapp.com/attachments/1021749336410959922/1158843021484376114/expermentus_cosy_large_room_with_blond_guy_coding_on_a_computer_b3cf0a8d-6e45-44df-a6db-90c759ae8ffd.png?ex=651db82a&is=651c66aa&hm=8c7385a95b421d1a431f816cdc3d8d27856780e247957d8e2869a78ce7222504&" class='image' id="image3" draggable="false" onclick='maximize(3, id)')
-        img(src="https://cdn.discordapp.com/attachments/1021749336410959922/1158843021484376114/expermentus_cosy_large_room_with_blond_guy_coding_on_a_computer_b3cf0a8d-6e45-44df-a6db-90c759ae8ffd.png?ex=651db82a&is=651c66aa&hm=8c7385a95b421d1a431f816cdc3d8d27856780e247957d8e2869a78ce7222504&" class='image' id="image4" draggable="false" onclick='maximize(4, id)')
-        img(src="https://cdn.discordapp.com/attachments/1021749336410959922/1158843021484376114/expermentus_cosy_large_room_with_blond_guy_coding_on_a_computer_b3cf0a8d-6e45-44df-a6db-90c759ae8ffd.png?ex=651db82a&is=651c66aa&hm=8c7385a95b421d1a431f816cdc3d8d27856780e247957d8e2869a78ce7222504&" class='image' id="image5" draggable="false" onclick='maximize(5, id)')
-        img(src="https://cdn.discordapp.com/attachments/1021749336410959922/1158843021484376114/expermentus_cosy_large_room_with_blond_guy_coding_on_a_computer_b3cf0a8d-6e45-44df-a6db-90c759ae8ffd.png?ex=651db82a&is=651c66aa&hm=8c7385a95b421d1a431f816cdc3d8d27856780e247957d8e2869a78ce7222504&" class='image' id="image6" draggable="false" onclick='maximize(6, id)')
-        img(src="https://cdn.discordapp.com/attachments/1021749336410959922/1158843021484376114/expermentus_cosy_large_room_with_blond_guy_coding_on_a_computer_b3cf0a8d-6e45-44df-a6db-90c759ae8ffd.png?ex=651db82a&is=651c66aa&hm=8c7385a95b421d1a431f816cdc3d8d27856780e247957d8e2869a78ce7222504&" class='image' id="image7" draggable="false" onclick='maximize(7, id)')
-        img(src="https://cdn.discordapp.com/attachments/1021749336410959922/1158843021484376114/expermentus_cosy_large_room_with_blond_guy_coding_on_a_computer_b3cf0a8d-6e45-44df-a6db-90c759ae8ffd.png?ex=651db82a&is=651c66aa&hm=8c7385a95b421d1a431f816cdc3d8d27856780e247957d8e2869a78ce7222504&" class='image' id="image8" draggable="false" onclick='maximize(8, id)')
-        img(src="https://cdn.discordapp.com/attachments/1021749336410959922/1158843021484376114/expermentus_cosy_large_room_with_blond_guy_coding_on_a_computer_b3cf0a8d-6e45-44df-a6db-90c759ae8ffd.png?ex=651db82a&is=651c66aa&hm=8c7385a95b421d1a431f816cdc3d8d27856780e247957d8e2869a78ce7222504&" class='image' id="image9" draggable="false" onclick='maximize(9, id)')
-        img(src="https://cdn.discordapp.com/attachments/1021749336410959922/1158843021484376114/expermentus_cosy_large_room_with_blond_guy_coding_on_a_computer_b3cf0a8d-6e45-44df-a6db-90c759ae8ffd.png?ex=651db82a&is=651c66aa&hm=8c7385a95b421d1a431f816cdc3d8d27856780e247957d8e2869a78ce7222504&" class='image' id="image10" draggable="false" onclick='maximize(10, id)')
+    h1(data-value="GO BACK" onclick='goBack()' class="back" id="backButton")
+        span GO BACK
 
-    img(src="https://cdn.discordapp.com/attachments/1021749336410959922/1158843021484376114/expermentus_cosy_large_room_with_blond_guy_coding_on_a_computer_b3cf0a8d-6e45-44df-a6db-90c759ae8ffd.png?ex=651db82a&is=651c66aa&hm=8c7385a95b421d1a431f816cdc3d8d27856780e247957d8e2869a78ce7222504&" class='hiddenImage' id="hiddenImage1" draggable="false" hidden="true")
-    img(src="https://cdn.discordapp.com/attachments/1021749336410959922/1158843021484376114/expermentus_cosy_large_room_with_blond_guy_coding_on_a_computer_b3cf0a8d-6e45-44df-a6db-90c759ae8ffd.png?ex=651db82a&is=651c66aa&hm=8c7385a95b421d1a431f816cdc3d8d27856780e247957d8e2869a78ce7222504&" class='hiddenImage' id="hiddenImage2" draggable="false" hidden="true")
-    img(src="https://cdn.discordapp.com/attachments/1021749336410959922/1158843021484376114/expermentus_cosy_large_room_with_blond_guy_coding_on_a_computer_b3cf0a8d-6e45-44df-a6db-90c759ae8ffd.png?ex=651db82a&is=651c66aa&hm=8c7385a95b421d1a431f816cdc3d8d27856780e247957d8e2869a78ce7222504&" class='hiddenImage' id="hiddenImage3" draggable="false" hidden="true")
-    img(src="https://cdn.discordapp.com/attachments/1021749336410959922/1158843021484376114/expermentus_cosy_large_room_with_blond_guy_coding_on_a_computer_b3cf0a8d-6e45-44df-a6db-90c759ae8ffd.png?ex=651db82a&is=651c66aa&hm=8c7385a95b421d1a431f816cdc3d8d27856780e247957d8e2869a78ce7222504&" class='hiddenImage' id="hiddenImage4" draggable="false" hidden="true")
-    img(src="https://cdn.discordapp.com/attachments/1021749336410959922/1158843021484376114/expermentus_cosy_large_room_with_blond_guy_coding_on_a_computer_b3cf0a8d-6e45-44df-a6db-90c759ae8ffd.png?ex=651db82a&is=651c66aa&hm=8c7385a95b421d1a431f816cdc3d8d27856780e247957d8e2869a78ce7222504&" class='hiddenImage' id="hiddenImage5" draggable="false" hidden="true")
-    img(src="https://cdn.discordapp.com/attachments/1021749336410959922/1158843021484376114/expermentus_cosy_large_room_with_blond_guy_coding_on_a_computer_b3cf0a8d-6e45-44df-a6db-90c759ae8ffd.png?ex=651db82a&is=651c66aa&hm=8c7385a95b421d1a431f816cdc3d8d27856780e247957d8e2869a78ce7222504&" class='hiddenImage' id="hiddenImage6" draggable="false" hidden="true")
-    img(src="https://cdn.discordapp.com/attachments/1021749336410959922/1158843021484376114/expermentus_cosy_large_room_with_blond_guy_coding_on_a_computer_b3cf0a8d-6e45-44df-a6db-90c759ae8ffd.png?ex=651db82a&is=651c66aa&hm=8c7385a95b421d1a431f816cdc3d8d27856780e247957d8e2869a78ce7222504&" class='hiddenImage' id="hiddenImage7" draggable="false" hidden="true")
-    img(src="https://cdn.discordapp.com/attachments/1021749336410959922/1158843021484376114/expermentus_cosy_large_room_with_blond_guy_coding_on_a_computer_b3cf0a8d-6e45-44df-a6db-90c759ae8ffd.png?ex=651db82a&is=651c66aa&hm=8c7385a95b421d1a431f816cdc3d8d27856780e247957d8e2869a78ce7222504&" class='hiddenImage' id="hiddenImage8" draggable="false" hidden="true")
-    img(src="https://cdn.discordapp.com/attachments/1021749336410959922/1158843021484376114/expermentus_cosy_large_room_with_blond_guy_coding_on_a_computer_b3cf0a8d-6e45-44df-a6db-90c759ae8ffd.png?ex=651db82a&is=651c66aa&hm=8c7385a95b421d1a431f816cdc3d8d27856780e247957d8e2869a78ce7222504&" class='hiddenImage' id="hiddenImage9" draggable="false" hidden="true")
-    img(src="https://cdn.discordapp.com/attachments/1021749336410959922/1158843021484376114/expermentus_cosy_large_room_with_blond_guy_coding_on_a_computer_b3cf0a8d-6e45-44df-a6db-90c759ae8ffd.png?ex=651db82a&is=651c66aa&hm=8c7385a95b421d1a431f816cdc3d8d27856780e247957d8e2869a78ce7222504&" class='hiddenImage' id="hiddenImage10" draggable="false" hidden="true")
+    div(id="image-track" data-mouse-down-at="0" data-prev-percentage="0")
+        img(src="https://cdn.discordapp.com/attachments/1021749336410959922/1158843021484376114/expermentus_cosy_large_room_with_blond_guy_coding_on_a_computer_b3cf0a8d-6e45-44df-a6db-90c759ae8ffd.png?ex=651db82a&is=651c66aa&hm=8c7385a95b421d1a431f816cdc3d8d27856780e247957d8e2869a78ce7222504&" class='image' draggable="false" onclick='maximize("hiddenImage1")')
+        img(src="https://cdn.discordapp.com/attachments/1021749336410959922/1158843021484376114/expermentus_cosy_large_room_with_blond_guy_coding_on_a_computer_b3cf0a8d-6e45-44df-a6db-90c759ae8ffd.png?ex=651db82a&is=651c66aa&hm=8c7385a95b421d1a431f816cdc3d8d27856780e247957d8e2869a78ce7222504&" class='image' draggable="false" onclick='maximize("hiddenImage2")')
+        img(src="https://cdn.discordapp.com/attachments/1021749336410959922/1158843021484376114/expermentus_cosy_large_room_with_blond_guy_coding_on_a_computer_b3cf0a8d-6e45-44df-a6db-90c759ae8ffd.png?ex=651db82a&is=651c66aa&hm=8c7385a95b421d1a431f816cdc3d8d27856780e247957d8e2869a78ce7222504&" class='image' draggable="false" onclick='maximize("hiddenImage3")')
+        img(src="https://cdn.discordapp.com/attachments/1021749336410959922/1158843021484376114/expermentus_cosy_large_room_with_blond_guy_coding_on_a_computer_b3cf0a8d-6e45-44df-a6db-90c759ae8ffd.png?ex=651db82a&is=651c66aa&hm=8c7385a95b421d1a431f816cdc3d8d27856780e247957d8e2869a78ce7222504&" class='image' draggable="false" onclick='maximize("hiddenImage4")')
+        img(src="https://cdn.discordapp.com/attachments/1021749336410959922/1158843021484376114/expermentus_cosy_large_room_with_blond_guy_coding_on_a_computer_b3cf0a8d-6e45-44df-a6db-90c759ae8ffd.png?ex=651db82a&is=651c66aa&hm=8c7385a95b421d1a431f816cdc3d8d27856780e247957d8e2869a78ce7222504&" class='image' draggable="false" onclick='maximize("hiddenImage5")')
+        img(src="https://cdn.discordapp.com/attachments/1021749336410959922/1158843021484376114/expermentus_cosy_large_room_with_blond_guy_coding_on_a_computer_b3cf0a8d-6e45-44df-a6db-90c759ae8ffd.png?ex=651db82a&is=651c66aa&hm=8c7385a95b421d1a431f816cdc3d8d27856780e247957d8e2869a78ce7222504&" class='image' draggable="false" onclick='maximize("hiddenImage6")')
+        img(src="https://cdn.discordapp.com/attachments/1021749336410959922/1158843021484376114/expermentus_cosy_large_room_with_blond_guy_coding_on_a_computer_b3cf0a8d-6e45-44df-a6db-90c759ae8ffd.png?ex=651db82a&is=651c66aa&hm=8c7385a95b421d1a431f816cdc3d8d27856780e247957d8e2869a78ce7222504&" class='image' draggable="false" onclick='maximize("hiddenImage7")')
+        img(src="https://cdn.discordapp.com/attachments/1021749336410959922/1158843021484376114/expermentus_cosy_large_room_with_blond_guy_coding_on_a_computer_b3cf0a8d-6e45-44df-a6db-90c759ae8ffd.png?ex=651db82a&is=651c66aa&hm=8c7385a95b421d1a431f816cdc3d8d27856780e247957d8e2869a78ce7222504&" class='image' draggable="false" onclick='maximize("hiddenImage8")')
+        img(src="https://cdn.discordapp.com/attachments/1021749336410959922/1158843021484376114/expermentus_cosy_large_room_with_blond_guy_coding_on_a_computer_b3cf0a8d-6e45-44df-a6db-90c759ae8ffd.png?ex=651db82a&is=651c66aa&hm=8c7385a95b421d1a431f816cdc3d8d27856780e247957d8e2869a78ce7222504&" class='image' draggable="false" onclick='maximize("hiddenImage9")')
+        img(src="https://cdn.discordapp.com/attachments/1021749336410959922/1158843021484376114/expermentus_cosy_large_room_with_blond_guy_coding_on_a_computer_b3cf0a8d-6e45-44df-a6db-90c759ae8ffd.png?ex=651db82a&is=651c66aa&hm=8c7385a95b421d1a431f816cdc3d8d27856780e247957d8e2869a78ce7222504&" class='image' draggable="false" onclick='maximize("hiddenImage10")')
+
+    img(src="https://cdn.discordapp.com/attachments/1021749336410959922/1158843021484376114/expermentus_cosy_large_room_with_blond_guy_coding_on_a_computer_b3cf0a8d-6e45-44df-a6db-90c759ae8ffd.png?ex=651db82a&is=651c66aa&hm=8c7385a95b421d1a431f816cdc3d8d27856780e247957d8e2869a78ce7222504&" class='hiddenImage' id="hiddenImage1" draggable="false")
+    img(src="https://cdn.discordapp.com/attachments/1021749336410959922/1158843021484376114/expermentus_cosy_large_room_with_blond_guy_coding_on_a_computer_b3cf0a8d-6e45-44df-a6db-90c759ae8ffd.png?ex=651db82a&is=651c66aa&hm=8c7385a95b421d1a431f816cdc3d8d27856780e247957d8e2869a78ce7222504&" class='hiddenImage' id="hiddenImage2" draggable="false")
+    img(src="https://cdn.discordapp.com/attachments/1021749336410959922/1158843021484376114/expermentus_cosy_large_room_with_blond_guy_coding_on_a_computer_b3cf0a8d-6e45-44df-a6db-90c759ae8ffd.png?ex=651db82a&is=651c66aa&hm=8c7385a95b421d1a431f816cdc3d8d27856780e247957d8e2869a78ce7222504&" class='hiddenImage' id="hiddenImage3" draggable="false")
+    img(src="https://cdn.discordapp.com/attachments/1021749336410959922/1158843021484376114/expermentus_cosy_large_room_with_blond_guy_coding_on_a_computer_b3cf0a8d-6e45-44df-a6db-90c759ae8ffd.png?ex=651db82a&is=651c66aa&hm=8c7385a95b421d1a431f816cdc3d8d27856780e247957d8e2869a78ce7222504&" class='hiddenImage' id="hiddenImage4" draggable="false")
+    img(src="https://cdn.discordapp.com/attachments/1021749336410959922/1158843021484376114/expermentus_cosy_large_room_with_blond_guy_coding_on_a_computer_b3cf0a8d-6e45-44df-a6db-90c759ae8ffd.png?ex=651db82a&is=651c66aa&hm=8c7385a95b421d1a431f816cdc3d8d27856780e247957d8e2869a78ce7222504&" class='hiddenImage' id="hiddenImage5" draggable="false")
+    img(src="https://cdn.discordapp.com/attachments/1021749336410959922/1158843021484376114/expermentus_cosy_large_room_with_blond_guy_coding_on_a_computer_b3cf0a8d-6e45-44df-a6db-90c759ae8ffd.png?ex=651db82a&is=651c66aa&hm=8c7385a95b421d1a431f816cdc3d8d27856780e247957d8e2869a78ce7222504&" class='hiddenImage' id="hiddenImage6" draggable="false")
+    img(src="https://cdn.discordapp.com/attachments/1021749336410959922/1158843021484376114/expermentus_cosy_large_room_with_blond_guy_coding_on_a_computer_b3cf0a8d-6e45-44df-a6db-90c759ae8ffd.png?ex=651db82a&is=651c66aa&hm=8c7385a95b421d1a431f816cdc3d8d27856780e247957d8e2869a78ce7222504&" class='hiddenImage' id="hiddenImage7" draggable="false")
+    img(src="https://cdn.discordapp.com/attachments/1021749336410959922/1158843021484376114/expermentus_cosy_large_room_with_blond_guy_coding_on_a_computer_b3cf0a8d-6e45-44df-a6db-90c759ae8ffd.png?ex=651db82a&is=651c66aa&hm=8c7385a95b421d1a431f816cdc3d8d27856780e247957d8e2869a78ce7222504&" class='hiddenImage' id="hiddenImage8" draggable="false")
+    img(src="https://cdn.discordapp.com/attachments/1021749336410959922/1158843021484376114/expermentus_cosy_large_room_with_blond_guy_coding_on_a_computer_b3cf0a8d-6e45-44df-a6db-90c759ae8ffd.png?ex=651db82a&is=651c66aa&hm=8c7385a95b421d1a431f816cdc3d8d27856780e247957d8e2869a78ce7222504&" class='hiddenImage' id="hiddenImage9" draggable="false")
+    img(src="https://cdn.discordapp.com/attachments/1021749336410959922/1158843021484376114/expermentus_cosy_large_room_with_blond_guy_coding_on_a_computer_b3cf0a8d-6e45-44df-a6db-90c759ae8ffd.png?ex=651db82a&is=651c66aa&hm=8c7385a95b421d1a431f816cdc3d8d27856780e247957d8e2869a78ce7222504&" class='hiddenImage' id="hiddenImage10" draggable="false")
 
 
     script.
-            const track = document.getElementById("image-track");
-            const maxPercentage = 0; // Maximum percentage (0% is fully scrolled to the right)
-            const minPercentage = -100; // Minimum percentage (-100% is fully scrolled to the left)
-            const scrollSpeed = 2; // Adjust the scroll speed as ne
-            const animationDuration = 1200; // Duration of the animation in milliseconds
-            let isMouseDown = false; // Track mouse down state
+        const track = document.getElementById("image-track");
+        const back = document.getElementById("backButton");
+        let selectedHiddenImage;
+        const maxPercentage = 0; // Maximum percentage (0% is fully scrolled to the right)
+        const minPercentage = -100; // Minimum percentage (-100% is fully scrolled to the left)
+        const scrollSpeed = 2; // Adjust the scroll speed asne
+        const animationDuration = 1200; // Duration of the animation in milliseconds
+        let isMouseDown = false; // Track mouse down state
 
-            // Initialize the current percentage to 0
-            track.dataset.percentage = 0;
+        // Initialize the current percentage to 0
+        track.dataset.percentage = 0;
 
-            // Initialize prevPercentage to the current percentage
-            track.dataset.prevPercentage = 0;
+        // Initialize prevPercentage to the current percentage
+        track.dataset.prevPercentage = 0;
 
-            // Function to smoothly animate the track and images
-            const animateTrackAndImages = (nextPercentage) => {
+        // Function to smoothly animate the track and images
+        const animateTrackAndImages = (nextPercentage) => {
 
-                // Animate the track's transform property
-                track.animate(
+            // Animate the track's transform property
+            track.animate(
+                {
+                    transform: `translate(${nextPercentage}%, -50%)`
+                },
+                {
+                    duration: animationDuration,
+                    fill: "forwards"
+                }
+            );
+
+            for (const imageElement of track.getElementsByClassName("image")) {
+                const imagePercentage = 100 + nextPercentage; // Adjust the image position
+                imageElement.animate(
                     {
-                        transform: `translate(${nextPercentage}%, -50%)`
+                        objectPosition: `${imagePercentage}% center`
                     },
                     {
                         duration: animationDuration,
                         fill: "forwards"
                     }
                 );
-
-                for (const imageElement of track.getElementsByClassName("image")) {
-                    const id = imageElement.id;
-                    const computedStyle = window.getComputedStyle(imageElement);
-                    const currentXValue = computedStyle.getPropertyValue("object-position").split(' ')[0];
-
-                    const imagePercentage = 1 / currentXValue; // Adjust the image position
-                    imageElement.animate(
-                        {
-                            objectPosition: `${imagePercentage}% center`
-                        },
-                        {
-                            duration: animationDuration,
-                            fill: "forwards"
-                        }
-                    );
-                }
-
-                for (const hiddenImage of document.getElementsByClassName("hiddenImage")) {
-                    const computedStyle = window.getComputedStyle(hiddenImage);
-                    const currentXValue = computedStyle.getPropertyValue("object-position").split(' ')[0];
-
-                    const imagePercentage = 1 / currentXValue; // Adjust the image position
-                    hiddenImage.animate(
-                        {
-                            objectPosition: `${imagePercentage}% center`
-                        },
-                        {
-                            duration: animationDuration,
-                            fill: "forwards"
-                        }
-                    );
-                }
             }
 
-                // Function to handle mouse wheel scrolling
-            const handleMouseWheel = e => {
-                if (isMouseDown) {
-                    return; // Prevent scroll wheel when the mouse is down
-                }
+            for (const hiddenImage of document.getElementsByClassName("hiddenImage")) {
+                const computedStyle = window.getComputedStyle(hiddenImage);
+                const currentXValue = computedStyle.getPropertyValue("object-position").split(' ')[0];
 
-                // Calculate the new percentage based on the scroll direction and speed
-                const scrollDirection = e.deltaY > 0 ? -1 : 1; // Negative deltaY for scrolling right, positive for left
-                const percentageChange = scrollDirection * scrollSpeed;
-                let nextPercentage = parseFloat(track.dataset.percentage) + percentageChange;
-
-                // Ensure the new percentage stays within the defined limits
-                nextPercentage = Math.min(maxPercentage, Math.max(minPercentage, nextPercentage));
-
-                // Update the dataset and apply the transform
-                track.dataset.percentage = nextPercentage;
-
-                // Animate the track and images
-                animateTrackAndImages(nextPercentage);
-
-                // Prevent the default scroll behavior
-                e.preventDefault();
-
-                // Synchronize prevPercentage with the current percentage
-                track.dataset.prevPercentage = nextPercentage;
-            };
-
-            // Add the mouse wheel event listener to the track
-            track.addEventListener("wheel", handleMouseWheel);
-
-            // Original mouse interaction code
-            window.onmousedown = e => {
-                track.dataset.mouseDownAt = e.clientX;
-                isMouseDown = true;
-                // Synchronize prevPercentage with the current percentage
-                track.dataset.prevPercentage = track.dataset.percentage;
-            };
-
-            window.onmouseup = e => {
-                track.dataset.mouseDownAt = "0";
-                isMouseDown = false;
-            };
-
-            window.onmousemove = e => {
-                if (track.dataset.mouseDownAt === "0" || !isMouseDown) return;
-
-                const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX;
-                const maxDelta = window.innerWidth / 2;
-
-                const percentage = (mouseDelta / maxDelta) * -100;
-                const nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage;
-                const nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
-
-                track.dataset.percentage = nextPercentage;
-
-                // Animate the track and images
-                animateTrackAndImages(nextPercentage);
-            };
-
-            function maximize(givenPercent, id) {
-
-                track.animate(
+                const imagePercentage = 1 / currentXValue; // Adjust the image position
+                hiddenImage.animate(
                     {
-                        transform: `translate(${-10.11*(givenPercent-1)}%, -50%)`,
-                        display: "fill"
+                        objectPosition: `${imagePercentage}% center`
                     },
                     {
-                        duration: animationDuration/5,
+                        duration: animationDuration,
                         fill: "forwards"
                     }
                 );
+            }
+        }
 
+            // Function to handle mouse wheel scrolling
+        const handleMouseWheel = e => {
+            if (isMouseDown) {
+                return; // Prevent scroll wheel when the mouse is down
             }
 
+            // Calculate the new percentage based on the scroll direction and speed
+            const scrollDirection = e.deltaY > 0 ? -1 : 1; // Negative deltaY for scrolling right, positive for left
+            const percentageChange = scrollDirection * scrollSpeed;
+            let nextPercentage = parseFloat(track.dataset.percentage) + percentageChange;
+
+            // Ensure the new percentage stays within the defined limits
+            nextPercentage = Math.min(maxPercentage, Math.max(minPercentage, nextPercentage));
+
+            // Update the dataset and apply the transform
+            track.dataset.percentage = nextPercentage;
+
+            // Animate the track and images
+            animateTrackAndImages(nextPercentage);
+
+            // Prevent the default scroll behavior
+            e.preventDefault();
+
+            // Synchronize prevPercentage with the current percentage
+            track.dataset.prevPercentage = nextPercentage;
+        };
+
+        // Add the mouse wheel event listener to the track
+        track.addEventListener("wheel", handleMouseWheel);
+
+        // Original mouse interaction code
+        window.onmousedown = e => {
+            track.dataset.mouseDownAt = e.clientX;
+            isMouseDown = true;
+            // Synchronize prevPercentage with the current percentage
+            track.dataset.prevPercentage = track.dataset.percentage;
+        };
+
+        window.onmouseup = e => {
+            track.dataset.mouseDownAt = "0";
+            isMouseDown = false;
+        };
+
+        window.onmousemove = e => {
+            if (track.dataset.mouseDownAt === "0" || !isMouseDown) return;
+
+            const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX;
+            const maxDelta = window.innerWidth / 2;
+
+            const percentage = (mouseDelta / maxDelta) * -100;
+            const nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage;
+            const nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
+
+            track.dataset.percentage = nextPercentage;
+
+            // Animate the track and images
+            animateTrackAndImages(nextPercentage);
+        };
+
+        function maximize(hiddenImageId) {
+            selectedHiddenImage = document.getElementById(hiddenImageId);
+            track.animate(
+                {
+                    top: "150%",
+                },
+                {
+                    duration: animationDuration/3,
+                    fill: "forwards"
+                }
+            );
+
+            setTimeout(() => {
+                selectedHiddenImage.animate(
+                    {
+                        top: "0%"
+                    },
+                    {
+                        duration: animationDuration/2,
+                        fill: "forwards"
+                    }
+                );
+            }, animationDuration/4);
+
+            setTimeout(() => {
+                back.animate(
+                    {
+                        visibility: "visible",
+                        zIndex: "1"
+                    },
+                    {
+                        duration: animationDuration / 5,
+                        fill: "forwards"
+                    }
+                );
+            }, animationDuration/1.5);
+
+
+        }
+
+        function goBack(){
+
+            back.animate(
+                {
+                    visibility: "hidden",
+                },
+                {
+                    duration: animationDuration / 2,
+                    fill: "forwards"
+                }, animationDuration
+            );
+
+            selectedHiddenImage.animate(
+                {
+                    top: "-100%"
+                },
+                {
+                    duration: animationDuration / 2,
+                    fill: "forwards"
+            })
+            track.animate(
+                {
+                    top: "50%"
+                },
+                {
+                    duration: animationDuration / 2,
+                    fill: "forwards"
+                },
+            )
+        };
+
+        const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+        let interval = null;
+
+        document.querySelector("h1").addEventListener("mouseover", event => {
+
+            let currentIteration = 0;
+
+            interval = setInterval(() => {
+                event.target.innerText = event.target.innerText
+                    .split("")
+                    .map((letter, index) => {
+                        if (index < currentIteration) {
+                            return event.target.dataset.value[index];
+                        }
+                        return letters[Math.floor(Math.random() * 26)];
+                    })
+                    .join("");
+
+                if (currentIteration >= event.target.dataset.value.length) {
+                    clearInterval(interval);
+                }
+
+                currentIteration += 1/3;
+            }, 30);
+        });
 
