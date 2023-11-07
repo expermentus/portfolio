@@ -8,11 +8,9 @@ block content
 
       p This is a test by Christoffer from Aalborg University Copenhagen.
       p The app shows how you could implement a personal portfolio hej
-      div(class='button')
-        div(class=container)
-          a.button-link(href='/about' onpointerover="ABOUT ME")
-            button
-              span ABOUT ME
-          a.button-link(href='/projects' data-value="PROJECTS")
-            button
-              span PROJECTS
+
+      h1(data-value="ABOUT ME" onclick='redirect(/about)')
+        span ABOUT ME
+
+      h1(data-value="PROJECTS" onclick='redirect(/projects)' CLA)
+        span PROJECTS
